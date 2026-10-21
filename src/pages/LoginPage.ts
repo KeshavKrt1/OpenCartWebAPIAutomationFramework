@@ -33,7 +33,7 @@ export class LoginPage extends BasePage {
     }
 
     async doLogin(username: string, password: string): Promise<void> {
-        console.log(`User creds: ${username} - ${password}`);
+        console.log(`App User creds: ${username} - ${password}`);
         await this.emailId.fill(username);
         await this.password.fill(password);
         await this.loginBtn.click();
