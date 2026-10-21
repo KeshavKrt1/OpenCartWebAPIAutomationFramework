@@ -1,0 +1,18 @@
+[
+
+
+{
+    "username": "wrong@open.com",
+    "password": "wrong@123"
+},
+{
+    "username": "invalid@open.com",
+    "password": ""
+},
+{
+    "username": "test1@test122.com",
+    "password": "wrong@12"
+}
+
+
+]
