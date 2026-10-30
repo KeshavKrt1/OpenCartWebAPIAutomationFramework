@@ -9,7 +9,7 @@ export class HomePage extends BasePage {
     private readonly LogoutLink: Locator;
     private readonly headers: Locator;
     private readonly searchbox: Locator;
-    private readonly searchIcon: Locator;
+   // private readonly searchIcon: Locator;
 
     //constructor of the clss..to initialize the locators:
 
@@ -18,12 +18,12 @@ export class HomePage extends BasePage {
         this.LogoutLink = page.getByRole('link', { name: 'Logout' });
         this.headers = page.getByRole('heading', { level: 2 });
         this.searchbox = page.getByRole('textbox', { name: 'search' });
-        this.searchIcon = page.locator('#search button');
+       // this.searchIcon = page.locator('#search button');
     }
 
     //page actions:
 
-     async getHomePageTitle(): Promise<String> {
+    async getHomePageTitle(): Promise<String> {
         return await this.page.title();
     }
 
